@@ -1,0 +1,62 @@
+
+.seachForm .icon svg {
+  @apply font-extrabold;
+}
+
+.entryarea {
+  position: relative;
+}
+
+.entryarea input {
+  padding: 0.5rem 0.5rem;
+}
+
+label {
+  position: absolute;
+  top: 10px;
+  left: 1rem;
+  background-color: white;
+  transition: 0.3s ease-in-out;
+  z-index: 20;
+  pointer-events: none;
+  line-height: 0.9;
+}
+label,
+.location-input {
+  @apply text-xs font-medium;
+}
+
+.location-input:focus + label,
+.location-input:not(:placeholder-shown) + label {
+  top: -6px;
+  left: 0.7rem;
+}
+
+.location-input {
+  background-color: transparent;
+  z-index: 10;
+  position: relative;
+  transition: 0.3s ease-in-out;
+  border: 1px solid rgba(33, 33, 33, 0.4);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.location-input:focus {
+  border-color: rgba(33, 33, 33, 0.7);
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.location-input {
+  @apply border transition-all duration-200 rounded-md px-4 py-2  outline-none;
+}
+
+.navOption ::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+.navOption ::-webkit-scrollbar-thumb {
+  background-color: rgba(33, 33, 33, 0.7);
+  border-radius: 5px;
+}
